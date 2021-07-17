@@ -61,10 +61,10 @@ public class LaunchMRE : MonoBehaviour
 		}
 	}
 
-	private async void StartApp()
+	private void StartApp()
 	{
 		Debug.Log("Starting MRE app.");
-		await MREComponent?.EnableApp();
+		MREComponent?.EnableApp();
 		_running = true;
 	}
 
